@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS tb_horas (id INTEGER PRIMARY KEY AUTOINCREMENT, data text(10), e1_hora text, s1_hora text, e2_hora text, s2_hora text, horas_totais text)
