@@ -18,6 +18,7 @@ class Conn:
         lines = sql.readlines()
          
         for line in lines:
+            
             cur.execute(line)
 
 

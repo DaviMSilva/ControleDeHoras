@@ -3,11 +3,10 @@ from msilib.schema import Class
 
 class User:
 
-    def __init__(self, login, senha, email, tel) -> None:
-        self.login = login
-        self.senha = senha
-        self.email = email
-        self.tel = tel
+    login = None
+    senha = None
+    email = None
+    tel = None
     
     def getLogin(self):
 
