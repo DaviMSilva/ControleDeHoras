@@ -1,12 +1,12 @@
-from msilib.schema import Class
-
 
 class User:
 
-    login = None
-    senha = None
-    email = None
-    tel = None
+    def __init__(self, email, login,senha,tel) -> None:
+        
+        self.email = email
+        self.login = login
+        self.senha = senha
+        self.tel = tel
     
     def getLogin(self):
 
@@ -34,4 +34,4 @@ class User:
         self.tel =tel
     
     def toString(self):
-        return [self.login,self.senha,self.email,self.tel]
+        return (self.login,self.senha,self.email,self.tel)

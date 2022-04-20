@@ -11,15 +11,17 @@ from dao.usuarioDAO import DaoUser
 class Controle:
 
     def cadastrar():
-        user =User()
+        
         Conn.con
-        user.email = input("digite seu email:")
-        user.login = input("digite seu login:")
-        user.senha = input("digite sua senha:")
-        user.tel = input("digite seu telefone:")
-
+        email = input("digite seu email:")
+        login = input("digite seu login:")
+        senha = input("digite sua senha:")
+        tel = input("digite seu telefone:")
+        user = User(email,login,senha,tel)
         try:
+            
             DaoUser.salvar(user)
+            print(user.toString())
         except Exception as e:
             print(e)
         
